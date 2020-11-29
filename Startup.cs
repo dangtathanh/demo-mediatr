@@ -23,9 +23,7 @@ namespace Demo.MediatR
         {
             services.AddControllers();
             services.AddMediatR(Assembly.GetExecutingAssembly());
-            services.AddTransient<INotifierMediatorService, NotifierMediatorService>();
             services.AddTransient<IGroupService, GroupService>();
-            services.AddTransient<IGroupActivityService, GroupActivityService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
